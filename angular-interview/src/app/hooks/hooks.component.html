@@ -1,0 +1,14 @@
+<div>
+  <h3>Lice Cycle Hooks</h3>
+  <label for="check">SampleCheck</label>
+  <input type="text" (blur)="onChange($event)">
+  <hr>
+  <form>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" [(ngModel)]="name">
+    <label for="price">Price</label>
+    <input type="number" name="item-number" id="item-number" [(ngModel)]="price">
+    <button (click)="onUpdate()">Update</button>
+  </form>
+  <app-hook-child [dataBoundProp]="inputText" [itemData]="data"></app-hook-child>
+</div>
