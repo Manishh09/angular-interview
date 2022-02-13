@@ -3,12 +3,14 @@
   <label for="check">SampleCheck</label>
   <input type="text" (blur)="onChange($event)">
   <hr>
+  <div class="container">
   <form>
     <label for="name">Name</label>
     <input type="text" name="name" id="name" [(ngModel)]="name">
     <label for="price">Price</label>
     <input type="number" name="item-number" id="item-number" [(ngModel)]="price">
-    <button (click)="onUpdate()">Update</button>
+    <button class="btn btn-success"(click)="onUpdate()">Update</button>
   </form>
+  </div>
   <app-hook-child [dataBoundProp]="inputText" [itemData]="data"></app-hook-child>
 </div>

@@ -7,6 +7,7 @@ import { HooksComponent } from './hooks/hooks.component';
 import { HookChildComponent } from './hooks/hook-child/hook-child.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CommonModule } from '@angular/common';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    NgbModule,
     //CommonModule,
     //ReactiveFormsModule
   ],
