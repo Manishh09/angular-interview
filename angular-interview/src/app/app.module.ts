@@ -8,12 +8,16 @@ import { HookChildComponent } from './hooks/hook-child/hook-child.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProductDashboardComponent } from './product-dashboard/product-dashboard.component';
+import { ProductWidgetComponent } from './product-dashboard/product-widget/product-widget.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HooksComponent,
-    HookChildComponent
+    HookChildComponent,
+    ProductDashboardComponent,
+    ProductWidgetComponent
   ],
   imports: [
     BrowserModule,
